@@ -1,4 +1,4 @@
-##MODELS
+MODELS
 
 __User__
 * has_one author
