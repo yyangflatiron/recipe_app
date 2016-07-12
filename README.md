@@ -1,23 +1,24 @@
-MODELS
+# README
 
-__User__
-* has_one author
-* has_one reader
+This README would normally document whatever steps are necessary to get the
+application up and running.
 
-__Author__
-* has_many recipes
-* belongs_to user
+Things you may want to cover:
 
-__Reader__
-* has_many bookmarks
-* has_many views
-* belongs_to user
+* Ruby version
 
-__Recipe__
-* belongs_to user
-* has_many bookmarks
-* has_many views
-* has_many ingredients
+* System dependencies
 
-__Ingredient__
-* belongs_to recipe
+* Configuration
+
+* Database creation
+
+* Database initialization
+
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* ...
