@@ -1,23 +1,23 @@
-MODELS
+##MODELS
 
-User
-has_one author
-has_one reader
+__User__
+* has_one author
+* has_one reader
 
-Author
-has_many recipes
-belongs_to user
+__Author__
+* has_many recipes
+* belongs_to user
 
-Reader
-has_many bookmarks
-has_many views
-belongs_to user
+__Reader__
+* has_many bookmarks
+* has_many views
+* belongs_to user
 
-Recipe
-belongs_to user
-has_many bookmarks
-has_many views
-has_many ingredients
+__Recipe__
+* belongs_to user
+* has_many bookmarks
+* has_many views
+* has_many ingredients
 
-Ingredient
-belongs_to recipe
+__Ingredient__
+* belongs_to recipe
