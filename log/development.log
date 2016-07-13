@@ -5098,3 +5098,119 @@ Processing by SessionsController#new as HTML
 Completed 200 OK in 31ms (Views: 28.6ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/sign_in" for ::1 at 2016-07-13 09:18:52 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (15.7ms)
+Completed 200 OK in 443ms (Views: 420.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for ::1 at 2016-07-13 09:18:57 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"o4hIKAcmcpByD0c1lxqoBTd0pWs/Q56i9W5Qbam0RJi1CuK/ebP3l8+NLSEnby21On4rUGlNjJXhvBIfrAv7Xw==", "name"=>"Tom", "password"=>"[FILTERED]", "commit"=>"Sign in"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "Tom"], ["LIMIT", 1]]
+Redirected to http://localhost:3012/sign_in
+Completed 302 Found in 178ms (ActiveRecord: 10.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2016-07-13 09:18:57 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 35ms (Views: 33.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-07-13 09:43:18 -0400
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 58ms (Views: 54.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2016-07-13 09:43:20 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 46ms (Views: 41.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for ::1 at 2016-07-13 09:43:24 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hoGBWiJuySVcFKRHyYazfX8YEHU4zgFxZ3mbf7NTXZCWOOXVzoxxq//EVKNFt7KnvXEy5kGmqNnVO0aYOUW/Sg==", "name"=>"weoifj", "password"=>"[FILTERED]", "commit"=>"Sign in"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "weoifj"], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 8434ms (ActiveRecord: 0.7ms)
+
+
+  
+SystemExit (exit):
+  
+app/controllers/sessions_controller.rb:18:in `create'
+  Rendering /Users/avrambillig/.rvm/gems/ruby-2.2.3/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/avrambillig/.rvm/gems/ruby-2.2.3/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/avrambillig/.rvm/gems/ruby-2.2.3/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (230.8ms)
+  Rendering /Users/avrambillig/.rvm/gems/ruby-2.2.3/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/avrambillig/.rvm/gems/ruby-2.2.3/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (60.4ms)
+  Rendering /Users/avrambillig/.rvm/gems/ruby-2.2.3/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/avrambillig/.rvm/gems/ruby-2.2.3/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (25.0ms)
+  Rendered /Users/avrambillig/.rvm/gems/ruby-2.2.3/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (418.0ms)
+Started GET "/sign_in" for ::1 at 2016-07-13 09:43:39 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 5107ms (Views: 4895.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2016-07-13 09:43:53 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (26.0ms)
+Completed 200 OK in 527ms (Views: 501.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for ::1 at 2016-07-13 09:43:59 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yPM6FbaQ/V3S2Nx1amNiQRFSH1kj07si6X9t7IAyJFjecZCCyAV4Wm9atmHaFufxHFiRYnXdqRX9rS+ehY2bnw==", "name"=>"opiwhef", "password"=>"[FILTERED]", "commit"=>"Sign in"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "opiwhef"], ["LIMIT", 1]]
+Redirected to http://localhost:3012/sign_in
+Completed 302 Found in 125ms (ActiveRecord: 6.9ms)
+
+
+Started GET "/sign_in" for ::1 at 2016-07-13 09:44:00 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (17.4ms)
+Completed 200 OK in 515ms (Views: 501.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for ::1 at 2016-07-13 09:44:08 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"X1lsOomm4eNmHpsRoxlkOzjpBf4OVDqOf10ytcAg8VNJ28at9zNk5Nuc8QUTbOGLNeOLxVhaKLlrj3DHxZ9OlA==", "name"=>"Tom", "password"=>"[FILTERED]", "commit"=>"Sign in"}
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "Tom"], ["LIMIT", 1]]
+Redirected to http://localhost:3012/sign_in
+Completed 302 Found in 212ms (ActiveRecord: 7.9ms)
+
+
+Started GET "/sign_in" for ::1 at 2016-07-13 09:44:08 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (17.4ms)
+Completed 200 OK in 506ms (Views: 491.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for ::1 at 2016-07-13 09:44:15 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VTyl2yMGITlIR8Sdpv8B7XLTZIM9gEaq3q+oaU57SelDvg9MXZOkPvXFrokWioRdf9nquGuOVJ3KfeobS8T2Lg==", "name"=>"Tom", "password"=>"[FILTERED]", "commit"=>"Sign in"}
+  [1m[36mUser Load (9.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "Tom"], ["LIMIT", 1]]
+Redirected to http://localhost:3012/users/1
+Completed 302 Found in 123ms (ActiveRecord: 10.3ms)
+
+
+Started GET "/users/1" for ::1 at 2016-07-13 09:44:15 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 512ms (Views: 467.5ms | ActiveRecord: 0.0ms)
+
+

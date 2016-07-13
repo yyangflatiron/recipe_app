@@ -1,8 +1,6 @@
 Please sign in!
 
-<% flash.each do |key, value| %>
-  <div class="alert"><%= value %></div>
-<% end %>
+<%= flash[:message]%>
 
 <%= form_tag "/sessions" do %>
 
