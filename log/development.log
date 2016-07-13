@@ -2670,3 +2670,343 @@ Processing by UsersController#show as HTML
 Completed 200 OK in 22ms (Views: 18.7ms | ActiveRecord: 0.3ms)
 
 
+Started GET "/" for ::1 at 2016-07-13 09:31:00 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (6.9ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 246ms (Views: 233.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2016-07-13 09:31:09 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (395.2ms)
+Completed 200 OK in 442ms (Views: 413.2ms | ActiveRecord: 6.8ms)
+
+
+Started POST "/users" for ::1 at 2016-07-13 09:31:27 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"muBiqoDLxCHp2nyWPMEfHHxAqZZOTKWFyOMVHiYNhOZ7uNY0b7Yx/p9Eso1HOhrlulKCTF3gaoE+fD14m2Nhqw==", "user"=>{"name"=>"Kellye", "fav_cuisine"=>"Pasta", "bio"=>"sidfhsdoifhd", "image"=>"jspjfj", "allergies"=>"peanust", "hometown"=>"NYC", "email"=>"test@test.com", "password"=>"[FILTERED]"}, "commit"=>"Create User"}
+Completed 500 Internal Server Error in 35019ms (ActiveRecord: 0.0ms)
+
+
+  
+SystemExit (exit):
+  
+app/controllers/users_controller.rb:24:in `user_params'
+app/controllers/users_controller.rb:8:in `create'
+  Rendering /Users/gust/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/gust/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/gust/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (140.6ms)
+  Rendering /Users/gust/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/gust/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (45.0ms)
+  Rendering /Users/gust/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/gust/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (16.9ms)
+  Rendered /Users/gust/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (272.5ms)
+Started GET "/" for ::1 at 2016-07-13 09:33:18 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 228ms (Views: 217.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2016-07-13 09:33:19 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (370.5ms)
+Completed 200 OK in 416ms (Views: 389.1ms | ActiveRecord: 4.6ms)
+
+
+Started POST "/users" for ::1 at 2016-07-13 09:33:23 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8cLx/JanKM1xFCEou9D+n/mfFw2l0aUdZqtZjH78UMkQmkViedrdEgeK7zPAK/tmP40817Z9ahmQNHHqw5K1hA==", "user"=>{"name"=>"uih", "fav_cuisine"=>"ihiohioh", "bio"=>"oihoihioh", "image"=>"iohoih", "allergies"=>"ihooh", "hometown"=>"iohoih", "email"=>"oihoih", "password"=>"[FILTERED]"}, "commit"=>"Create User"}
+Completed 500 Internal Server Error in 125048ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `args' for #<UsersController:0x007f83d074b840>):
+  
+app/controllers/users_controller.rb:24:in `user_params'
+app/controllers/users_controller.rb:8:in `create'
+  Rendering /Users/gust/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/gust/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/gust/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.3ms)
+  Rendering /Users/gust/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/gust/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /Users/gust/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/gust/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered /Users/gust/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (99.7ms)
+Started POST "/users" for ::1 at 2016-07-13 09:35:49 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sXmkE4Shladg3JJmGdLSrwOOycvKhPpy/5RPM4KbatHLAXXDEW53ezBwkptRePIfOwIp9zn710HYSCRYJtaswg==", "user"=>{"name"=>"uih", "fav_cuisine"=>"ihiohioh", "bio"=>"oihoihioh", "image"=>"iohoih", "allergies"=>"ihooh", "hometown"=>"iohoih", "email"=>"oihoih", "password"=>"[FILTERED]"}, "commit"=>"Create User"}
+Unpermitted parameters: name, fav_cuisine, bio, image, allergies, hometown, email, password
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Unpermitted parameters: name, fav_cuisine, bio, image, allergies, hometown, email, password
+Completed 500 Internal Server Error in 50757ms (ActiveRecord: 2.9ms)
+
+
+  
+SystemExit (exit):
+  
+app/controllers/users_controller.rb:13:in `create'
+  Rendering /Users/gust/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/gust/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/gust/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (136.0ms)
+  Rendering /Users/gust/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/gust/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (40.4ms)
+  Rendering /Users/gust/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/gust/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (23.6ms)
+  Rendered /Users/gust/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (262.4ms)
+Started GET "/users/new" for ::1 at 2016-07-13 09:36:50 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (100.8ms)
+Completed 200 OK in 2327ms (Views: 2314.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2016-07-13 09:39:15 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (327.1ms)
+Completed 200 OK in 526ms (Views: 498.0ms | ActiveRecord: 2.8ms)
+
+
+Started POST "/users" for ::1 at 2016-07-13 09:39:19 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wNtqBFpt8nFGjkHYgbV09AtacigA8a4pTH8YTX9nk+u6o7vUz6IQrRYiQSXJH1REM9aSFPOOgxpro3Mm2ypV+A==", "user"=>{"name"=>"ihih", "fav_cuisine"=>"ihioh", "bio"=>"p", "image"=>"hih", "allergies"=>"ih", "hometown"=>"iho", "email"=>"ihioh", "password"=>"[FILTERED]"}, "commit"=>"Create User"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1)):
+  
+app/controllers/users_controller.rb:22:in `user_params'
+app/controllers/users_controller.rb:8:in `create'
+  Rendering /Users/gust/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/gust/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/gust/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (9.9ms)
+  Rendering /Users/gust/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/gust/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendering /Users/gust/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/gust/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /Users/gust/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (60.8ms)
+Started GET "/users/new" for ::1 at 2016-07-13 09:40:14 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (334.0ms)
+Completed 200 OK in 540ms (Views: 510.2ms | ActiveRecord: 2.8ms)
+
+
+Started POST "/users" for ::1 at 2016-07-13 09:40:21 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DRUk97jxd1y8MUnRnze4UzTYr8nH96ACIuH0ogTSSQl3bfUnLT6VgOydSSzXnZjjDFRP9TSIjTEFPZ/JoJ+PGg==", "user"=>{"name"=>"ij", "fav_cuisine"=>"ijjih", "bio"=>"oihoih", "image"=>"ioho", "allergies"=>"ihioh", "hometown"=>"oih", "email"=>"oih", "password"=>"[FILTERED]"}, "commit"=>"Create User"}
+Completed   in 209086ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-07-13 09:44:05 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 240ms (Views: 227.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-07-13 09:44:07 -0400
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 21ms (Views: 19.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2016-07-13 09:44:11 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (363.0ms)
+Completed 200 OK in 416ms (Views: 379.8ms | ActiveRecord: 5.7ms)
+
+
+Started POST "/users" for ::1 at 2016-07-13 09:44:19 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uxlc+1svlL55MVXChHMUoul8CbYU25M9fhvlXBQj39RaQehltFJhYQ+vm9n/iBFbL24ibAd3XDmIhM06qU06mQ==", "user"=>{"name"=>"uhiu", "fav_cuisine"=>"uiuhiuh", "bio"=>"uhuihiuhi", "image"=>"huihuh", "allergies"=>"iuhiuhiuh", "hometown"=>"uhiuh", "email"=>"uhihi", "password"=>"[FILTERED]"}, "commit"=>"Create User"}
+Unpermitted parameters: name, fav_cuisine, bio, image, allergies, hometown, email, password
+Completed 500 Internal Server Error in 525394ms (ActiveRecord: 0.0ms)
+
+
+  
+SystemExit (exit):
+  
+app/controllers/users_controller.rb:24:in `user_params'
+app/controllers/users_controller.rb:8:in `create'
+  Rendering /Users/gust/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/gust/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/gust/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (246.3ms)
+  Rendering /Users/gust/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/gust/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (71.1ms)
+  Rendering /Users/gust/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/gust/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (43.2ms)
+  Rendered /Users/gust/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (455.7ms)
+Started GET "/users/new" for ::1 at 2016-07-13 09:53:30 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (319.9ms)
+Completed 200 OK in 524ms (Views: 494.6ms | ActiveRecord: 3.3ms)
+
+
+Started POST "/users" for ::1 at 2016-07-13 09:53:36 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VCZhTve4E/+qmN1KKPWO+307oaN989NbZfw4I6iRzBQuXrCeYnfxI/o03bdgX65LRbdBn46M/mhCIFNIDNwKBw==", "user"=>{"name"=>"ihoih", "fav_cuisine"=>"ihh", "bio"=>"oihih", "image"=>"iho", "allergies"=>"hioh", "hometown"=>"ioh", "email"=>"oh", "password"=>"[FILTERED]"}, "commit"=>"Create User"}
+Completed 500 Internal Server Error in 11640ms (ActiveRecord: 0.0ms)
+
+
+  
+SystemExit (exit):
+  
+app/controllers/users_controller.rb:23:in `user_params'
+app/controllers/users_controller.rb:8:in `create'
+  Rendering /Users/gust/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/gust/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/gust/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (126.7ms)
+  Rendering /Users/gust/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/gust/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (38.6ms)
+  Rendering /Users/gust/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/gust/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (16.0ms)
+  Rendered /Users/gust/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (240.0ms)
+Started GET "/users/new" for ::1 at 2016-07-13 09:54:00 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (103.2ms)
+Completed 200 OK in 588ms (Views: 455.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2016-07-13 09:54:07 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iDCmNZIqUxMytI9kYKA0dAKK7pBZFWg9XIHrvxGtv+DySHflB+Wxz2IYj5koChTEOgYOrKpqRQ57XYDUteB58w==", "user"=>{"name"=>"jhh", "fav_cuisine"=>"ihoih", "bio"=>"ihioh", "image"=>"ihoih", "allergies"=>"ihih", "hometown"=>"ihoih", "email"=>"ihioh", "password"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (7.0ms)[0m  [1m[32mINSERT INTO "users" ("name", "fav_cuisine", "bio", "image", "allergies", "hometown", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["name", "jhh"], ["fav_cuisine", "ihoih"], ["bio", "ihioh"], ["image", "ihoih"], ["allergies", "ihih"], ["hometown", "ihoih"], ["email", "ihioh"], ["password_digest", "$2a$10$GkACg/B/f87P1.vKXp972ei.6AE6r/wj6Vk/FKTwK9OXTLPrVt/Ce"], ["created_at", 2016-07-13 13:54:07 UTC], ["updated_at", 2016-07-13 13:54:07 UTC]]
+  [1m[35m (5.8ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/users/3
+Completed 302 Found in 158ms (ActiveRecord: 13.2ms)
+
+
+Started GET "/users/3" for ::1 at 2016-07-13 09:54:07 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (7.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (19.2ms)
+Completed 200 OK in 420ms (Views: 370.7ms | ActiveRecord: 7.6ms)
+
+
+Started GET "/images/ihoih" for ::1 at 2016-07-13 09:54:08 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/images/ihoih"):
+  
+actionpack (5.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0) lib/rails/engine.rb:522:in `call'
+puma (3.4.0) lib/puma/configuration.rb:224:in `call'
+puma (3.4.0) lib/puma/server.rb:569:in `handle_request'
+puma (3.4.0) lib/puma/server.rb:406:in `process_client'
+puma (3.4.0) lib/puma/server.rb:271:in `block in run'
+puma (3.4.0) lib/puma/thread_pool.rb:114:in `block in spawn_thread'
+  Rendering /Users/gust/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/gust/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/gust/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (25.4ms)
+  Rendered collection of /Users/gust/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb [18 times] (95.2ms)
+  Rendered /Users/gust/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (10.2ms)
+  Rendering /Users/gust/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/gust/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (22.3ms)
+  Rendered /Users/gust/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (296.2ms)
+Started GET "/users" for ::1 at 2016-07-13 09:59:45 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 210ms (Views: 198.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2016-07-13 09:59:53 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iDCmNZIqUxMytI9kYKA0dAKK7pBZFWg9XIHrvxGtv+DySHflB+Wxz2IYj5koChTEOgYOrKpqRQ57XYDUteB58w==", "user"=>{"name"=>"Kellye", "fav_cuisine"=>"Pasta", "bio"=>"isd jfsdi fjsdifjsdijf", "image"=>"http://i.imgur.com/WLwE54i.png", "allergies"=>"peanuts", "hometown"=>"ishdfoih", "email"=>"hoihoih", "password"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.9ms)[0m  [1m[32mINSERT INTO "users" ("name", "fav_cuisine", "bio", "image", "allergies", "hometown", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["name", "Kellye"], ["fav_cuisine", "Pasta"], ["bio", "isd jfsdi fjsdifjsdijf"], ["image", "http://i.imgur.com/WLwE54i.png"], ["allergies", "peanuts"], ["hometown", "ishdfoih"], ["email", "hoihoih"], ["password_digest", "$2a$10$kfbXs31algn3OFSzJTvgJemEszjccr3PuAf48FO6fj4OVFK9xClY."], ["created_at", 2016-07-13 13:59:53 UTC], ["updated_at", 2016-07-13 13:59:53 UTC]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/users/4
+Completed 302 Found in 92ms (ActiveRecord: 7.1ms)
+
+
+Started GET "/users/4" for ::1 at 2016-07-13 09:59:53 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 38ms (Views: 32.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2016-07-13 10:07:29 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 214ms (Views: 204.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2016-07-13 10:08:32 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (376.8ms)
+Completed 200 OK in 422ms (Views: 395.7ms | ActiveRecord: 3.7ms)
+
+
+Started POST "/users" for ::1 at 2016-07-13 10:08:47 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"r0cITRAo5lVscUOL73lw28qw/28cYXNfHtXsi/qY3YNOH7zT/1UTihrvjZCUgnUiDKLUtQ/NvFvoSsTtR/Y4zg==", "user"=>{"name"=>"ohoh", "fav_cuisine"=>"huohuh", "bio"=>"uhoihoih", "image"=>"http://i.imgur.com/WLwE54i.png", "allergies"=>"ihuohioh", "hometown"=>"ihihih", "email"=>"ihh", "password"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "fav_cuisine", "bio", "image", "allergies", "hometown", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["name", "ohoh"], ["fav_cuisine", "huohuh"], ["bio", "uhoihoih"], ["image", "http://i.imgur.com/WLwE54i.png"], ["allergies", "ihuohioh"], ["hometown", "ihihih"], ["email", "ihh"], ["password_digest", "$2a$10$aP/Ck3YohVM6pYIx3jLrZO6fVvk0m3W.saRbpIQBRUW9.SpSLaccS"], ["created_at", 2016-07-13 14:08:47 UTC], ["updated_at", 2016-07-13 14:08:47 UTC]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/users/5
+Completed 302 Found in 74ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/users/5" for ::1 at 2016-07-13 10:08:47 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 21ms (Views: 16.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users" for ::1 at 2016-07-13 10:08:59 -0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 19ms (Views: 16.6ms | ActiveRecord: 0.0ms)
+
+
