@@ -13,14 +13,14 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
   end
 
+  def profile
+    @user = current_user
+  end
+
   private
 
   def user_params
     params.require(:user).permit(params[:user].keys)
-  end
-
-  def show
-  	"good evening"
   end
 
 end
