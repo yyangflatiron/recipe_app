@@ -13,11 +13,7 @@ class SessionsController < ApplicationController
 			flash[:message] = "try again"
 	        redirect_to '/sign_in' 
 	    end
-
-    # flash.now[:message] = "try again" 
-
-    # return head(:forbidden) unless @user.authenticate(params[:password])
-
   end
 
+  
 end
