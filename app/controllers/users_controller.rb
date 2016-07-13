@@ -4,4 +4,8 @@ class UsersController < ApplicationController
 
   end
 
+  def show
+  	"good evening"
+  end
+
 end
