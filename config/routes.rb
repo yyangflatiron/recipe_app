@@ -3,5 +3,6 @@ Rails.application.routes.draw do
   resources :recipes
   resources :users
 
+  post "/sessions" => "sessions#create"
   get "/sign_in" => "sessions#new", as: 'new_session'
 end

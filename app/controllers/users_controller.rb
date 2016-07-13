@@ -19,4 +19,8 @@ class UsersController < ApplicationController
     params.require(:user).permit(params[:user].keys)
   end
 
+  def show
+  	"good evening"
+  end
+
 end
